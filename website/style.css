@@ -1,0 +1,145 @@
+:root {
+  --color: #b4b4b4;
+}
+body {
+  height: 100vh;
+  background: var(--color);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  display: flex;
+  height: max-content;
+  width: max-content;
+  background: var(--color);
+  color: #000000;
+  justify-content: center;
+  font-size: x-large;
+  font-family: "Oswald", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -3px -3px 10px #fff, 5px 5px 10px #0d2750;
+}
+
+.holder {
+  height: max-content;
+  text-align: center;
+  padding: 5px;
+}
+
+.entry {
+  display: flex;
+  width: 270px;
+  height: 100px;
+  margin-bottom: 10px;
+  background: rgba(59, 74, 107, 0.4);
+  font-size: medium;
+  font-weight: 600;
+  border-radius: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.headline {
+  font-size: larger;
+  font-weight: 300;
+}
+.title {
+  font-size: large;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  margin: 5px;
+  display: block;
+  font-size: x-large;
+}
+
+input {
+  height: 40px;
+  width: 250px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  display: block;
+  color: #000000;
+  font-size: medium;
+  background: var(--color);
+  border: 1px #9e9e9e solid;
+  font-family: "Oswald", sans-serif;
+  box-shadow: inset -3px -3px 10px 2px #fff, inset 5px 5px 10px 2px #0d2750;
+}
+.click {
+  box-shadow: inset -3px -3px 10px 2px #fff, inset 5px 5px 10px 2px#0d2750;
+  transform: scale(0.99);
+}
+
+.holder.feel {
+  display: flex;
+  height: max-content;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+button {
+  font-family: "Oswald", sans-serif;
+  width: 200px;
+  height: 50px;
+  margin: 20px 5px;
+  font-size: x-large;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background: var(--color);
+  box-shadow: -3px -3px 10px 2px #fff, 5px 5px 10px 2px #0d2750;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+textarea {
+  font-family: "Oswald", sans-serif;
+  background: var(--color);
+  font-size: medium;
+  color: #000000;
+  height: 120px;
+  width: 240px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: 1px #9e9e9e solid;
+  box-shadow: inset -3px -3px 10px 2px #fff, inset 5px 5px 10px 2px#0d2750;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #000;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #000;
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #000;
+  font-family: "Oswald", sans-serif;
+}
